@@ -16,6 +16,7 @@ Pizza.prototype.prices = function() {
   }
 };
 
+
 //UI Logic
 $(document).ready(function(){
   $("form#order-form").submit(function(event) {
@@ -25,7 +26,7 @@ $(document).ready(function(){
     const orderToppings = [];
 
     $("input:checkbox[name=toppings]:checked").each(function () {
-      orderToppings.push($(this).val())
+      orderToppings.push($(this).val());
     });
 
     const newOrder = new Pizza(orderSize, orderToppings);
