@@ -10,3 +10,21 @@ Pizza.prototype.prices = function() {
     return 8.99 + ()
   }
 }
+
+$(document).ready(function(){
+  $("form#order-form").submit(function(event) {
+    event.preventDefault();
+
+    const orderSize = $('#sizing').val();
+    const orderToppings = [];
+
+    $("input:checkbox[name=toppings]:checked").each(function () {
+      orderToppings.push($(this).val())
+    });
+
+    const newOrder = new Pizza(orderSize, orderToppings);
+    const orderPrice = newOrder.prices().toFixed(2)
+
+    
+  }
+}
