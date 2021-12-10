@@ -1,10 +1,9 @@
-function Pizza(size, cheese, pepperoni, pineapple) {
+function Pizza(size, toppings) {
   this.size = size;
-  this.cheese = cheese;
-  this.pepperoni = pepperoni;
-  this.pineapple = pineapple;
+  this.toppings = toppings;
 }
 
 Pizza.prototype.prices = function() {
-  
+  let pizzaSize = this.size;
+  let pizzaToppings = this.toppings.length;
 }
