@@ -8,9 +8,14 @@ Pizza.prototype.prices = function() {
   let pizzaSize = this.size;
   let toppings = this.toppings.length
   if(pizzaSize === "Ten") {
-    return 8.99 + (toppings*2)
-  };
-}
+    return 8.99 + (toppings*2);
+  } else if (pizzaSize === twelve) {
+    return 10.99 + (toppings*2);
+  } else {
+    return 12.99 + (toppings*2);
+  }
+};
+
 //UI Logic
 $(document).ready(function(){
   $("form#order-form").submit(function(event) {
