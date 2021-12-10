@@ -1,3 +1,4 @@
+//Biz Logic
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -11,6 +12,7 @@ Pizza.prototype.prices = function() {
   }
 }
 
+//UI Logic
 $(document).ready(function(){
   $("form#order-form").submit(function(event) {
     event.preventDefault();
