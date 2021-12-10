@@ -30,12 +30,12 @@ $(document).ready(function(){
     });
 
     const newOrder = new Pizza(orderSize, orderToppings);
-    const orderPrice = newOrder.prices().toFixed(2)
+    const orderPrice = newOrder.prices().toFixed(1)
 
     $('.pizza-pick').text(newOrder);
     $('.price').text(orderPrice);
-
-    $('#results').show();
-    console.log(results)
+    console.log(newOrder)
+    $('#total').show();
+    console.log(total);
   })
 });
