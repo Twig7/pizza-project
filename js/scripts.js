@@ -6,12 +6,11 @@ function Pizza(size, toppings) {
 
 Pizza.prototype.prices = function() {
   let pizzaSize = this.size;
-  let xtraChee = this.
+  let toppings = this.toppings.length
   if(pizzaSize === "Ten") {
-    return 8.99 + ()
-  }
+    return 8.99 + (toppings*2)
+  };
 }
-
 //UI Logic
 $(document).ready(function(){
   $("form#order-form").submit(function(event) {
@@ -27,6 +26,7 @@ $(document).ready(function(){
     const newOrder = new Pizza(orderSize, orderToppings);
     const orderPrice = newOrder.prices().toFixed(2)
 
-    
-  }
-}
+    $('#results').show();
+    console.log(results)
+  })
+});
