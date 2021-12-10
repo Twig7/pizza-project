@@ -5,5 +5,8 @@ function Pizza(size, toppings) {
 
 Pizza.prototype.prices = function() {
   let pizzaSize = this.size;
-  let pizzaToppings = this.toppings.length;
+  let xtraChee = this.
+  if(pizzaSize === "Ten") {
+    return 8.99 + ()
+  }
 }
