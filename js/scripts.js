@@ -30,10 +30,10 @@ $(document).ready(function(){
     });
 
     const newOrder = new Pizza(orderSize, orderToppings);
-    const orderPrice = newOrder.prices().toFixed(1)
+    const orderPrice = newOrder.prices().toFixed(2)
 
-    $('.pizza-pick').text(newOrder);
-    $('.price').text(orderPrice);
+    $('#pizza-pick').text(newOrder);
+    $('#price').text(orderPrice);
     console.log(newOrder)
     $('#total').show();
     console.log(total);
