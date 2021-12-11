@@ -34,6 +34,7 @@ $(document).ready(function(){
 
     $('#pizza-pick').text(orderSize);
     $('#price').text(orderPrice);
+    $('#topping-pick').text(orderToppings);
     console.log(newOrder)
     $('#total').show();
     console.log(total);
