@@ -9,7 +9,7 @@ Pizza.prototype.prices = function() {
   let toppings = this.toppings.length
   if(pizzaSize === "Ten") {
     return 10 + (toppings*2);
-  } else if (pizzaSize === "twelve") {
+  } else if (pizzaSize === "Twelve") {
     return 12 + (toppings*2);
   } else {
     return 14 + (toppings*2);
@@ -32,7 +32,7 @@ $(document).ready(function(){
     const newOrder = new Pizza(orderSize, orderToppings);
     const orderPrice = newOrder.prices().toFixed(2)
 
-    $('#pizza-pick').text(newOrder);
+    $('#pizza-pick').text(orderSize);
     $('#price').text(orderPrice);
     console.log(newOrder)
     $('#total').show();
